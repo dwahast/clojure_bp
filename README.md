@@ -15,7 +15,7 @@ listagem de produções, que poderá copiar para seus testes, em
 
 Você precisará ter instalado java e as ferramentas de linha de comando de
 clojure, conforme https://clojure.org/guides/getting_started. Você poderá rodar
-os testes com `clj -Atest`. Utilize Git para separar os commits. Compacte o
+os testes com `clj -Mtest`. Utilize Git para separar os commits. Compacte o
 repositório num .zip, e entregue por e-mail para konrad@brasilparalelo.com.br.
 
 # Briefing

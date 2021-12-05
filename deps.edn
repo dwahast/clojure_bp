@@ -1,7 +1,10 @@
 {:deps    {org.clojure/clojure {:mvn/version "1.10.1"}
-           clojure.java-time   {:mvn/version "0.3.2"}}
+           clojure.java-time/clojure.java-time   {:mvn/version "0.3.2"}}
  :paths   ["src"]
- :aliases {:test {:extra-paths ["test"]
+ :aliases {
+           :test {:extra-paths ["test"]
                   :extra-deps  {lambdaisland/kaocha {:mvn/version "0.0-529"}}
-                  :main-opts   ["-m" "kaocha.runner"]}}
- }
+                  :main-opts   ["-m" "kaocha.runner"]}
+           :repl {:extra-deps {nrepl/nrepl {:mvn/version "0.6.0"}}}
+           }
+}
