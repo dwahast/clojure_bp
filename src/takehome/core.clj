@@ -15,8 +15,14 @@
   [coll elm]  
   (if (nil? (some #(= elm %) coll)) false true))
 
+;; TODO: ajustar validade de midias e perfis
 (defn valid-media [object purchase product-list]
-  (and (in? product-list (:type object)) (expired-view object purchase)))
+  (if (= (:type purchase) :premium) 
+    (in? product-list (:type object)) 
+    (if (and (= (:type purchase) :macenas) (= (:type object) :patron))
+      (and (in? product-list (:type object)) (expired-view object purchase))
+      (and (in? product-list (:type object)) (expired-view object purchase))))
+  )
 
 (defn can-access? [object, purchase]
   (if (= (:type purchase) :patriota)
