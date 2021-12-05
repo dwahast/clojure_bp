@@ -3,7 +3,7 @@
 
 (def patriota-access '(:series :podcasts :debates :interview))
 (def premium-access '(:series :podcasts :debates :interview :curses))
-(def macenas-access '(:series :podcasts :debates :interview :curses :macenas))
+(def macenas-access '(:series :podcasts :debates :interview :curses :patron))
 
 (defn expired-view [object purchase]
   (time/before? (:subscription-start purchase)

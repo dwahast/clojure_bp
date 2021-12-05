@@ -42,7 +42,7 @@
           {:type               :patriota
            :subscription-start (time/local-date-time "2019-01-24T11:46:22.811")
            :subscription-end   (time/local-date-time "2020-01-24T11:46:22.811")}
-    false  {:type :macenas
+    false  {:type :patron
            :name "1964: O Brasil entre Armas e Livros",
            :released-at (time/local-date-time "2019-07-24T20:02:34.691")} 
           {:type               :patriota
@@ -89,7 +89,7 @@
           {:type               :premium
            :subscription-start (time/local-date-time "2017-01-24T11:46:22.811")
            :subscription-end   (time/local-date-time "2019-01-24T11:46:22.811")}
-    false  {:type :macenas
+    false  {:type :patron
            :name "1964: O Brasil entre Armas e Livros",
            :released-at (time/local-date-time "2019-07-24T20:02:34.691")} 
           {:type               :premium
@@ -130,7 +130,7 @@
           {:type               :macenas
            :subscription-start (time/local-date-time "2019-01-24T11:46:22.811")
            :subscription-end   (time/local-date-time "2020-01-24T11:46:22.811")}
-    true  {:type :macenas
+    true  {:type :patron
            :name "1964: O Brasil entre Armas e Livros",
            :released-at (time/local-date-time "2019-07-24T20:02:34.691")} 
           {:type               :macenas
